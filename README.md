@@ -8,13 +8,19 @@ A Python script can read values from an indicator or write to a control of a Lab
 
 LabRecipy consists of 2 main parts.
 1) dispatcher.vi which serves as a helper program as described above.
-2) dispatcher.py which is a module with functions such as read and write
+2) dispatcher.py which is a module with functions such as read and write.
+
+## Requirements
+The dispatcher.py module depends on the win32com module, which is part of the pywin32 package. In a Windows command prompt use the following command to install the package:
+```
+python -m pip instal pywin32
+```
 
 ## Status
 LabRecipy, at a functional level, fully replaces LabRecipe.
 
 ## Future versions
 Future enhancements could be some of the following:
-1) allowing to run multplie scripts alongside of each other, e.g. one to automate a process and one or more for condition monitoring
+1) allowing to run multplie scripts alongside of each other, e.g. one to automate a process and one or more for condition monitoring.
 2) simulating mouse clicks for latched Booleans since these do not accept new values using the 'Value (Signal)' property.
-3) Changing other properties than just the value.
+3) changing other properties, e.g. colors, visibility, than just the value.
